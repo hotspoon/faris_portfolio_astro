@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+
+import ContactCTA from "../components/ContactCTA.astro"
+import Hero from "../components/Hero.astro"
+import { Image } from "astro:assets"
+import atWorkImg from "../images/IMG_0038-min.jpg"
+---
+
+<BaseLayout title="About | Hamzah Al Farisi" description="About Hamzah Al Farisi">
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <div class="container__resume">
+          <a
+            href="https://drive.google.com/file/d/169BZtUsVHyvkzTF5pwoow2BWyuMJi4jg/view?usp=sharing"
+            class="btn-resume">My Resume</a
+          >
+        </div>
+        <Image
+          src={atWorkImg}
+          alt="Faris Image"
+          width="1553"
+          height="873"
+          alt="Faris at work alone"
+        />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <p>
+            Front-End Developer with three years experience at PT GDC Multi Sarana in helping
+            companies create and maintain a better code base for reusability. I'm specialize in
+            building dynamic web applications with React and Next.js. I'm skilled in integrating
+            backend services via REST APIs and conducting thorough testing with Jest, React Testing
+            Library, and Cypress.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>Bachelor of Applied Science</p>
+          <p>Informatics Engineering</p>
+          <p>Politeknik Elektronika Negeri Surabaya</p>
+          <p>2016-2020</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <p>React, Next, Jest, React Testing Library, Cypress</p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
