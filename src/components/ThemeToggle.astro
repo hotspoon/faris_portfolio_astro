@@ -88,10 +88,13 @@ import Icon from "./Icon.astro"
 
     isDark() {
       // Get theme from cookie
-      const theme = document.cookie
-        .split("; ")
-        .find((row) => row.startsWith("theme="))
-        .split("=")[1]
+      const themeRow = document.cookie.split("; ").find((row) => row.startsWith("theme="))
+
+      if (!themeRow) {
+        return false // or return a default theme
+      }
+
+      const theme = themeRow.split("=")[1]
       return theme === "dark"
     }
   }
