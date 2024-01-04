@@ -2,7 +2,7 @@
 title: Comfy Sloth E-commerce
 publishDate: 2020-03-02 00:00:00
 img: /assets/portfolio/stock-1.png
-img_alt: Comfy Sloth E-commerce
+img_alt: Comfy Sloth Web is an e-commerce website that provides buying and selling services for home furniture
 description: |
  Comfy Sloth Web is an e-commerce website that provides buying and selling services for home furniture using ReactJS and Auth0 authentication
 tags:

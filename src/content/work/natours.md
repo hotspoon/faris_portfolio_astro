@@ -2,7 +2,7 @@
 title: Natours
 publishDate: 2019-12-01 00:00:00
 img:  /assets/portfolio/stock-2.png
-img_alt: Natours
+img_alt: Natours is a wonderful website that will brings you to the next level.
 description: |
   This is a wonderful website that will brings you to the next level. It has really nice design.The Natours web offer good features like Most Popular Tours, and many more.
 tags:
