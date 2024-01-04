@@ -2,7 +2,7 @@
 title: Mapty App
 publishDate: 2019-10-02 00:00:00
 img: /assets/portfolio/stock-4.png
-img_alt: Mapty App
+img_alt: This is a simple website which has features tracking your position and mark it like google maps
 description: |
   This is a simple website which has features tracking your position and mark it like google maps :D
 tags:

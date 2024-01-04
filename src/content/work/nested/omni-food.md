@@ -2,9 +2,9 @@
 title: Omni Food
 publishDate: 2020-03-04 00:00:00
 img:  /assets/portfolio/stock-3.png
-img_alt: Omni Food
+img_alt: A Wonderful Website that contain The smart 365-days-per-year food subscription
 description: |
-  Comfy Sloth Web is an e-commerce website that provides buying and selling services for home furniture using ReactJS and Auth0 authentication
+  A Wonderful Website that contain The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.
 tags:
   - Design
   - Dev
